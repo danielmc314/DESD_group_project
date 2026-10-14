@@ -234,9 +234,68 @@ We can provide personalised recommendations based on a recommendation algorithm 
 
 
 
-### Analysis of major business processes and organisational processes (needs to be done)
+### Analysis of major business processes and organisational processes (1st draft)(john)
 
-### Initial product backlog and sprint plan (needs to be done)
+The BRFN marketplace has several main business processes that need to work together to connect local food producers with customers. 
+The table below shows the main processes we have identified so far, who is involved and what they are responsible for. 
+This is an initial analysis and may change as we develop the project further.
+
+
+| Business process | Main people involved | Main responsibilities |
+|---|---|---|
+| Producer and account management | Producers, BRFN administrators | Manage producer accounts and keep producer information up to date |
+| Product and inventory management | Producers, marketplace | Add and update products, prices, stock levels, and seasonal availability |
+| Customer browsing and ordering | Customers, marketplace, producers | Allow customers to search for products, view product information and place orders |
+| Order coordination and fulfilment | Customers, producers, marketplace | Organise orders containing products from different producers and make delivery or collection arrangements clear |
+| Payments and settlements | Customers, marketplace, producers, payment service | Handle simulated payments, calculate the 5% commission and keep records of payments owed to producers |
+| Food quality and traceability | Producers, customers, BRFN administrators | Keep important food information available and help identify affected orders if there is a food safety issue |
+| Sustainability and community information | Producers, marketplace, customers | Provide features such as food-miles information, surplus produce offers and recipes or storage advice |
+
+These processes are connected and depend on each other. 
+For example, customers need accurate product and stock information before they can place an order. 
+Once an order is placed, the marketplace needs to organise the order between the relevant producers and handle the payment. 
+Keeping accurate records of products, producers and orders is also important for payment records and dealing with possible food safety issues.
+
+#### Candidate Major Functionalities (subject to change !!!)
+
+We have identified two possible major functionalities for the project:
+
+**1. Product catalogue and inventory management**
+
+This would allow producers to add and update their products, including descriptions, prices, stock levels and availability. 
+This is important because producers need a simple way to manage their listings, especially when products change with the seasons.
+
+**2. Multi-vendor ordering and payments**
+
+This would allow customers to order products from multiple producers in one purchase. 
+The system would need to show which producers supply each product, handle simulated payments and calculate the marketplace's 5% commission.
+
+These are currently our proposed functionalities and still need to be discussed and agreed with the module team before detailed implementation begins. 
+The strategic BPMN diagram should show how the main business processes fit together, while further work will help us decide exactly what each selected functionality needs to include.
+
+### Initial product backlog and sprint plan (1st draft john)
+
+We will develop the BRFN marketplace in stages following the sprint time periods. 
+The aim is to agree on the main requirements first, then model the business processes before moving on to implementation and testing. 
+This way everything will be discussed and agreed upon on between each sprint. 
+The sprints are specified in the project assessment brief.
+
+| Sprint | Main focus | Expected outcome |
+|---|---|---|
+| Sprint 0 | Group setup and initial planning | Set up the repository, review the case study, identify stakeholders and create an initial product backlog |
+| Sprint 1: 20% | Strategic analysis and project setup | Complete the strategic BPMN model, analyse the major business processes, agree on the two candidate functionalities with the module team, and refine the backlog |
+| Sprint 2: 30% | Detailed process modelling and initial automation | Develop the two i* models, create detailed operational BPMN models for the agreed functionalities, and begin implementing the processes in Camunda |
+| Sprint 3: 50% | Implementation, integration and demonstration | Complete and test the executable processes, connect the relevant components, handle alternative and error paths, and prepare the final demonstration |
+
+#### Dependencies and Risks
+
+Some features depend on other parts of the system working correctly. 
+For example, the ordering process depends on accurate product availability and stock information. 
+Payment processing also needs to be linked to order confirmation, while the commission calculation must use the correct order amounts.
+
+We should agree on the scope of the two major functionalities before developing their detailed process models. 
+We also need to keep payments in a test environment, as required by the case study and assessment brief. 
+Regular meetings, clear task ownership and updates to the shared repository will help the group track progress and identify problems early.
 
 ### Effective use of the GitHub/GitLab repository
 
