@@ -218,12 +218,15 @@ appropriately.
 Financial requirements include weekly payment settlements with transparent audit trails  
 suitable for tax reporting purposes and business accounting needs.  
 "
+
 In bullets:
 - Allow producers to upload products with: name, description, price and availability timeframes
 - Easy way to update inventory 
 - Tab of incoming orders, ordered by time and timestamped. Notifications will urge the producer to deliver after the 48 hour minimum. 
 - A way to cash out using the app after admin fees. 
 - Tab of weekly payment settlements with transparent audit trails, in a format suitable for tax reporting and business accounting.
+- Customer login/signup
+  
 ##### Customer end: 
 Customers require a categorised app like uber eats with a search system. The UI must be clean and easy to use. All requirements must be met according to the case study. 
 The requirements in the case study:
@@ -238,12 +241,14 @@ indicators. The checkout process must handle both single-vendor and multi-vendor
 seamlessly whilst maintaining clear communication about individual supplier responsibilities,  
 delivery arrangements, and collection procedures.  
 "
+
 In bullets:
 - Clear and non - cluttered product browsing, allowing to filter by category. 
 - Search function to find specific items.
 - Information in the description of products will include: display of harvest dates, farm origin information, seasonal availability indicators. 
 - Checkout process handles single and multi vendor orders.
 -  Individual supplier responsibilities,  delivery arrangements, and collection procedures will be listed under store page and displayed post order in app.
+-  Supplier login/signup
 "
 #### Out of scope:
 ##### Producer end:
