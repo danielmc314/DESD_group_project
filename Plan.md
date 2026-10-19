@@ -96,16 +96,16 @@ Major functionalities: **Product catalogue** (epics 2–3) and **Multi-vendor or
 
 #### 2. Product catalogue (producer side)
 
-|ID|Item|Priority|
-|---|---|---|
-|CAT-01|Create, edit and delete product listings (name, description, price, unit)|Must|
-|CAT-02|Assign each product to a category|Must|
-|CAT-03|Set availability window (available from / to dates)|Must|
-|CAT-04|Stock quantity tracking, reduced automatically on order|Must|
-|CAT-05|Quick in-stock / out-of-stock toggle|Should|
-|CAT-06|Product image upload|Should|
-|CAT-07|Harvest date field shown to customers|Should|
-|CAT-08|Duplicate a previous season's listing to relist quickly|Could|
+| ID     | Item                                                                      | Priority |
+| ------ | ------------------------------------------------------------------------- | -------- |
+| CAT-01 | Create, edit and delete product listings (name, description, price, unit) | Must     |
+| CAT-02 | Assign each product to a category                                         | Must     |
+| CAT-03 | Set availability window (available from / to dates)                       | Must     |
+| CAT-04 | Stock quantity tracking, reduced automatically on order                   | Must     |
+| CAT-05 | Quick in-stock / out-of-stock toggle                                      | Should   |
+| CAT-06 | Product image upload                                                      | Should   |
+| CAT-07 | Harvest date field shown to customers                                     | Should   |
+| CAT-08 | Duplicate a previous season's listing to relist quickly                   | Could    |
 
 #### 3. Browsing & search (customer side)
 
@@ -200,7 +200,8 @@ All payment items use a test environment only (e.g. Stripe test mode), as the br
 
 #### In scope:
 ###### Producer end: 
-Producers require an intuitive way to upload their products etc. so we will provide a clean and simple UI where they can upload, delete and update their products with descriptions. All requirements in the case study must be met, including a way to track transaction history with a revenue summary. Requirements in the case study:
+Producers require an intuitive way to upload their products etc. so we will provide a clean and simple UI where they can upload, delete and update their products with descriptions. All requirements in the case study must be met, including a way to track transaction history with a revenue summary.
+Requirements in the case study:
 
 "
 The technical capabilities amongst producers vary considerably across the network. Some  
@@ -217,8 +218,15 @@ appropriately.
 Financial requirements include weekly payment settlements with transparent audit trails  
 suitable for tax reporting purposes and business accounting needs.  
 "
+In bullets:
+- Allow producers to upload products with: name, description, price and availability timeframes
+- Easy way to update inventory 
+- Tab of incoming orders, ordered by time and timestamped. Notifications will urge the producer to deliver after the 48 hour minimum. 
+- A way to cash out using the app after admin fees. 
+- Tab of weekly payment settlements with transparent audit trails, in a format suitable for tax reporting and business accounting.
 ##### Customer end: 
-Customers require a categorised app like uber eats with a search system. The UI must be clean and easy to use. All requirements must be met according to the case study. The requirements in the case study:
+Customers require a categorised app like uber eats with a search system. The UI must be clean and easy to use. All requirements must be met according to the case study. 
+The requirements in the case study:
 
 "
 Customers require robust product browsing capabilities organised by clearly defined categories  
@@ -230,14 +238,21 @@ indicators. The checkout process must handle both single-vendor and multi-vendor
 seamlessly whilst maintaining clear communication about individual supplier responsibilities,  
 delivery arrangements, and collection procedures.  
 "
+In bullets:
+- Clear and non - cluttered product browsing, allowing to filter by category. 
+- Search function to find specific items.
+- Information in the description of products will include: display of harvest dates, farm origin information, seasonal availability indicators. 
+- Checkout process handles single and multi vendor orders.
+-  Individual supplier responsibilities,  delivery arrangements, and collection procedures will be listed under store page and displayed post order in app.
+"
 #### Out of scope:
 ##### Producer end:
 We can provide an additional functionality so that producers can import their existing CSV files into the program, automatically listing their stock. We could also integrate links for their social media.
+Incoming orders can be coloured green, yellow or red. Green if <24 hours, Yellow if 24 > 48 and red if exceeding 48 hours.
 
 ##### Customer end:
 We can provide personalised recommendations based on a recommendation algorithm such as item-based collaborative filtering. It is basically 'Customers who bought X also bought Y'. Also a review and rating page for each shop and products.
-
-
+Order history
 
 ### Analysis of major business processes and organisational processes (1st draft)(john)
 
@@ -285,12 +300,12 @@ The aim is to agree on the main requirements first, then model the business proc
 This way everything will be discussed and agreed upon on between each sprint. 
 The sprints are specified in the project assessment brief.
 
-| Sprint | Main focus | Expected outcome |
-|---|---|---|
-| Sprint 0 | Group setup and initial planning | Set up the repository, review the case study, identify stakeholders and create an initial product backlog |
-| Sprint 1: 20% | Strategic analysis and project setup | Complete the strategic BPMN model, analyse the major business processes, agree on the two candidate functionalities with the module team, and refine the backlog |
-| Sprint 2: 30% | Detailed process modelling and initial automation | Develop the two i* models, create detailed operational BPMN models for the agreed functionalities, and begin implementing the processes in Camunda |
-| Sprint 3: 50% | Implementation, integration and demonstration | Complete and test the executable processes, connect the relevant components, handle alternative and error paths, and prepare the final demonstration |
+| Sprint        | Main focus                                        | Expected outcome                                                                                                                                                 |
+| ------------- | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Sprint 0      | Group setup and initial planning                  | Set up the repository, review the case study, identify stakeholders and create an initial product backlog                                                        |
+| Sprint 1: 20% | Strategic analysis and project setup              | Complete the strategic BPMN model, analyse the major business processes, agree on the two candidate functionalities with the module team, and refine the backlog |
+| Sprint 2: 30% | Detailed process modelling and initial automation | Develop the two i* models, create detailed operational BPMN models for the agreed functionalities, and begin implementing the processes in Camunda               |
+| Sprint 3: 50% | Implementation, integration and demonstration     | Complete and test the executable processes, connect the relevant components, handle alternative and error paths, and prepare the final demonstration             |
 
 #### Dependencies and Risks
 
