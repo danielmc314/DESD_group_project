@@ -200,7 +200,7 @@ All payment items use a test environment only (e.g. Stripe test mode), as the br
 
 #### In scope:
 ###### Producer end: 
-Producers require an intuitive way to upload their products etc. so we will provide a clean and simple UI where they can upload, delete and update their products with descriptions and all requirements in the case study including a way to track transaction history with a revenue summary. Requirements in the case study:
+Producers require an intuitive way to upload their products etc. so we will provide a clean and simple UI where they can upload, delete and update their products with descriptions. All requirements in the case study must be met, including a way to track transaction history with a revenue summary. Requirements in the case study:
 
 "
 The technical capabilities amongst producers vary considerably across the network. Some  
@@ -218,7 +218,7 @@ Financial requirements include weekly payment settlements with transparent audit
 suitable for tax reporting purposes and business accounting needs.  
 "
 ##### Customer end: 
-Customers require a categorised app like uber eats with a search system. The requirements in the case study:
+Customers require a categorised app like uber eats with a search system. The UI must be clean and easy to use. All requirements must be met according to the case study. The requirements in the case study:
 
 "
 Customers require robust product browsing capabilities organised by clearly defined categories  
