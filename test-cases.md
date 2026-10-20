@@ -48,3 +48,27 @@
 **Actual Result:** Not tested yet.
 
 **Status:** Not Run
+
+---
+
+## TC-PAY-002: Calculate 5% Marketplace Commission
+
+**Precondition:** An order has been successfully paid.
+
+**Test Data:**
+- Order total: £100
+- Commission rate: 5%
+
+**Steps:**
+1. Create a paid order with a total of £100.
+2. Calculate the marketplace commission.
+3. Check the commission and producer amount.
+
+**Expected Result:**
+- Marketplace commission is £5.
+- Producer amount is £95, assuming no other fees.
+
+**Actual Result:** Not tested yet.
+
+**Status:** Not Run
+
