@@ -1,4 +1,8 @@
 
+# Case 2 - Test Cases
+
+## TC-ORD-001: Insufficient Stock
+
 **Precondition:** Only 2 apples are available.
 
 **Test Data:**
