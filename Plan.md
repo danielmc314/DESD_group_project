@@ -259,7 +259,7 @@ Incoming orders can be coloured green, yellow or red. Green if <24 hours, Yellow
 We can provide personalised recommendations based on a recommendation algorithm such as item-based collaborative filtering. It is basically 'Customers who bought X also bought Y'. Also a review and rating page for each shop and products.
 Order history
 
-### Analysis of major business processes and organisational processes (1st draft)(john)
+### Use Case 2 - Analysis of major business processes and organisational processes (2nd draft john)
 
 The BRFN marketplace has several main business processes that need to work together to connect local food producers with customers. 
 The table below shows the main processes we have identified so far, who is involved and what they are responsible for. 
@@ -297,6 +297,48 @@ The system would need to show which producers supply each product, handle simula
 
 These are currently our proposed functionalities and still need to be discussed and agreed with the module team before detailed implementation begins. 
 The strategic BPMN diagram should show how the main business processes fit together, while further work will help us decide exactly what each selected functionality needs to include.
+
+#### Use Case 2 - Dependencies for Multi-Vendor Ordering
+
+We have decided to do Use Case 2. These are the different processes that need to happen in the correct order for checkout to work properly.
+First, the marketplace needs to check that the products in the customer's basket are still available and that there is enough stock.
+If an item is unavailable, the customer should be told so they can change their basket before continuing.
+
+Once the customer is happy andready to place the order, the marketplace needs to split it into separate orders for each of the producers involved.
+This makes it clear which products each producer is responsible for.
+The customer should also be able to see the relevant delivery or collection information before confirming the purchase.
+
+The payment result then affects what happens next.
+If the payment is successful, the order will be confirmed and the stock can be updated/ relayed to the producers.
+If the payment is declined, the customer should be given the option to try again.
+Otherwise the order cannot proceed and stock is not affected.
+
+Finally, the marketplace needs to keep accurate records of the order and the producer.
+These records are needed to calculate the 5% commission correctly and keep track of how much each producer is owed.
+This shows how stock management, ordering, payments and producer notifications all depend on each other.
+
+This is the initial understanding for the use case process.
+We may make changes .
+
+#### Multi-vendor Ordering Points of Failure
+
+The backlog lists the main ordering and payment requirements, but we also need to consider how the system should respond when parts of the process fail.
+These risks can be considered when developing/ finalising the operational BPMN model and test cases. Especially for situations where the process does not complete as expected.
+
+- Payment problems. Payments may be declined or the payment service may be unavailable. The system needs to allow an appropriate method to retry the order, or a seperate path without incorrectly confirming the order.
+
+- Order processing errors. The system could create incorrect order details or fail to notify a producer. These problems could affect the order preparation process. The solution is yet to be decided but it must resolve the issue hindering the producer or custmer as little as possible (compensation or something??).
+
+- Incorrect financial records. Errors when calculating the 5% commission or recording producer product amounts could lead to inaccurate payment records. The calculations and stored amounts should be checked through testing. If wrong, this may cause issues down the line when an eventual refund/ reimbursment happens.
+
+#### Checking the Consistency Across Models
+
+Our group should regularly check that our models, requirements and implementation stay consistent as the project develops.
+Although each part serves a different purpose, they should all ultimately describe thesame overall process and agreed system behaviour.
+
+We can do this by reviewing the different parts of our work together in our meetings at key stages, then recording any differences we find.
+If we identify any inconsistencies, we can discuss them as a group, agree on who has the correct approach and record any changes that need to be made.
+This will help us keep track of decisions, avoid conflicting versions and wasted work/time.
 
 ### Initial product backlog and sprint plan (1st draft john)
 
