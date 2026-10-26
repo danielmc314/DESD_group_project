@@ -81,8 +81,6 @@ Customers are lowest priority because community groups and restaurants, we assum
 
 ### Initial Product backlog
 
-Major functionalities: **Product catalogue** (epics 2–3) and **Multi-vendor ordering & payments** (epics 4–5).
-
 #### 1. Accounts & access
 
 |ID|Item|Priority|
