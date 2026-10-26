@@ -197,12 +197,12 @@ All payment items use a test environment only (e.g. Stripe test mode), as the br
 ### 2 major functionalities (Wayne)
 
 #### Customer multi-vendor ordering and checkout.
-Customer submits basket → service task checks stock and availability windows → DMN decides the split by producer, delivery or collection, and whether the 48h lead time is met → gateway for single vs multi-vendor (a multi-instance call activity per producer) → payment through an external API (e.g. Stripe test mode) → producer user task to accept or reject → confirmation email/SMS with each supplier’s responsibilities. 
+Customer submits basket → service task checks stock and availability windows → BPMN decides the split by producer, delivery or collection, and whether the 48h lead time is met → gateway for single vs multi-vendor (a multi-instance call activity per producer) → payment through an external API (e.g. Stripe test mode) → producer user task to accept or reject → confirmation email/SMS with each supplier’s responsibilities. 
 ##### Exceptions: 
 payment fails (error boundary, then retry or cancel), item out of stock (customer chooses partial order or cancel), and a timer boundary if the producer doesn’t respond in 24h (escalate and refund).
 
 #### Producer fulfilment and weekly settlement.
-Order confirmed message → producer user tasks to prepare and mark dispatched or collected, with a reminder timer before the 48h deadline → weekly timer start → service tasks total revenue, apply commission (DMN fee rules), generate an audit statement (CSV/PDF) and trigger payout through the external API. 
+Order confirmed message → producer user tasks to prepare and mark dispatched or collected, with a reminder timer before the 48h deadline → weekly timer start → service tasks total revenue, apply commission , generate an audit statement (CSV/PDF) and trigger payout through the external API. 
 ##### Exceptions: 
 open dispute or refund (gateway to admin review), and payout failure (error boundary, retry, then notify).
 
