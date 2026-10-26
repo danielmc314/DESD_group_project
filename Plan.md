@@ -261,23 +261,6 @@ For example, customers need accurate product and stock information before they c
 Once an order is placed, the marketplace needs to organise the order between the relevant producers and handle the payment. 
 Keeping accurate records of products, producers and orders is also important for payment records and dealing with possible food safety issues.
 
-#### Candidate Major Functionalities (subject to change !!!)
-
-We have identified two possible major functionalities for the project:
-
-**1. Product catalogue and inventory management**
-
-This would allow producers to add and update their products, including descriptions, prices, stock levels and availability. 
-This is important because producers need a simple way to manage their listings, especially when products change with the seasons.
-
-**2. Multi-vendor ordering and payments**
-
-This would allow customers to order products from multiple producers in one purchase. 
-The system would need to show which producers supply each product, handle simulated payments and calculate the marketplace's 5% commission.
-
-These are currently our proposed functionalities and still need to be discussed and agreed with the module team before detailed implementation begins. 
-The strategic BPMN diagram should show how the main business processes fit together, while further work will help us decide exactly what each selected functionality needs to include.
-
 #### Use Case 2 - Dependencies for Multi-Vendor Ordering
 
 We have decided to do Use Case 2. These are the different processes that need to happen in the correct order for checkout to work properly.
