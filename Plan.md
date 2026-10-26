@@ -196,66 +196,16 @@ All payment items use a test environment only (e.g. Stripe test mode), as the br
 ### BPMN diagram (needs to be done)
 ### 2 major functionalities (Wayne)
 
-#### In scope:
-###### Producer end: 
-Producers require an intuitive way to upload their products etc. so we will provide a clean and simple UI where they can upload, delete and update their products with descriptions. All requirements in the case study must be met, including a way to track transaction history with a revenue summary.
-Requirements in the case study:
+#### Customer multi-vendor ordering and checkout.
+Customer submits basket → service task checks stock and availability windows → DMN decides the split by producer, delivery or collection, and whether the 48h lead time is met → gateway for single vs multi-vendor (a multi-instance call activity per producer) → payment through an external API (e.g. Stripe test mode) → producer user task to accept or reject → confirmation email/SMS with each supplier’s responsibilities. 
+##### Exceptions: 
+payment fails (error boundary, then retry or cancel), item out of stock (customer chooses partial order or cancel), and a timer boundary if the producer doesn’t respond in 24h (escalate and refund).
 
-"
-The technical capabilities amongst producers vary considerably across the network. Some  
-operate exclusively through email and telephone-based ordering systems, dedicating  
-approximately fifteen hours per week to customer communication activities. Others maintain  
-basic social media presence but lack advanced technical expertise or resources for  
-sophisticated digital solutions.  
-All producers require intuitive mechanisms to list their products with essential information,  
-specifically: product names, detailed descriptions, pricing information, and availability  
-timeframes. The system must accommodate frequent seasonal inventory updates without  
-requiring extensive technical knowledge or training. Producers need comprehensive visibility of
-incoming orders with adequate lead time (minimum 48 hours) to prepare products  
-appropriately.  
-Financial requirements include weekly payment settlements with transparent audit trails  
-suitable for tax reporting purposes and business accounting needs.  
-"
+#### Producer fulfilment and weekly settlement.
+Order confirmed message → producer user tasks to prepare and mark dispatched or collected, with a reminder timer before the 48h deadline → weekly timer start → service tasks total revenue, apply commission (DMN fee rules), generate an audit statement (CSV/PDF) and trigger payout through the external API. 
+##### Exceptions: 
+open dispute or refund (gateway to admin review), and payout failure (error boundary, retry, then notify).
 
-In bullets:
-- Allow producers to upload products with: name, description, price and availability timeframes
-- Easy way to update inventory 
-- Tab of incoming orders, ordered by time and timestamped. Notifications will urge the producer to deliver after the 48 hour minimum. 
-- A way to cash out using the app after admin fees. 
-- Tab of weekly payment settlements with transparent audit trails, in a format suitable for tax reporting and business accounting.
-- Customer login/signup
-  
-##### Customer end: 
-Customers require a categorised app like uber eats with a search system. The UI must be clean and easy to use. All requirements must be met according to the case study. 
-The requirements in the case study:
-
-"
-Customers require robust product browsing capabilities organised by clearly defined categories  
-including vegetables, dairy products, bakery goods, preserves, and seasonal specialities. The  
-system must incorporate search functionality enabling users to locate specific items efficiently.  
-The shopping experience should reflect the unique requirements of local food systems,  
-including the display of harvest dates, farm origin information, and seasonal availability  
-indicators. The checkout process must handle both single-vendor and multi-vendor orders  
-seamlessly whilst maintaining clear communication about individual supplier responsibilities,  
-delivery arrangements, and collection procedures.  
-"
-
-In bullets:
-- Clear and non - cluttered product browsing, allowing to filter by category. 
-- Search function to find specific items.
-- Information in the description of products will include: display of harvest dates, farm origin information, seasonal availability indicators. 
-- Checkout process handles single and multi vendor orders.
--  Individual supplier responsibilities,  delivery arrangements, and collection procedures will be listed under store page and displayed post order in app.
--  Supplier login/signup
-"
-#### Out of scope:
-##### Producer end:
-We can provide an additional functionality so that producers can import their existing CSV files into the program, automatically listing their stock. We could also integrate links for their social media.
-Incoming orders can be coloured green, yellow or red. Green if <24 hours, Yellow if 24 > 48 and red if exceeding 48 hours.
-
-##### Customer end:
-We can provide personalised recommendations based on a recommendation algorithm such as item-based collaborative filtering. It is basically 'Customers who bought X also bought Y'. Also a review and rating page for each shop and products.
-Order history
 
 ### Use Case 2 - Analysis of major business processes and organisational processes (2nd draft john)
 
