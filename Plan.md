@@ -209,6 +209,7 @@ All payment items use a test environment only (e.g. Stripe test mode), as the br
 9. End: order confirmed.
    
 ##### Main exceptions:
+
 • Item unavailable: the customer amends the basket and it's validated again.
 • Slot under 48h: the customer picks a new date.
 • Producer doesn't reply in 24h (timer): that sub-order is dropped and admin is told.
