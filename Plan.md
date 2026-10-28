@@ -193,7 +193,9 @@ All payment items use a test environment only (e.g. Stripe test mode), as the br
 
 ## Sprint 1
 
-### BPMN diagram (needs to be done)
+### BPMN diagram: (Daniel)
+In docs/models
+
 ### 2 major functionalities (Wayne)
 
 ### In scope:
