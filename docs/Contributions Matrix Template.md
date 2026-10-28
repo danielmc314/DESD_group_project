@@ -27,7 +27,7 @@
 | 1 | 24017066 | Wayne Tong |  |
 | 2 | 24019174 | Zay Yar Kyaw |  |
 | 3 | 24020025 | John Robinson |  |
-| 4 | 23037788 | Daniel Mcnamara |  |
+| 4 | 23037788 | Daniel Mcnamara | BPMN model developer |
 | 5 |  |  |  |
 
 **Technical Component Contributions**
