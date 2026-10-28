@@ -303,7 +303,7 @@ We can do this by reviewing the different parts of our work together in our meet
 If we identify any inconsistencies, we can discuss them as a group, agree on who has the correct approach and record any changes that need to be made.
 This will help us keep track of decisions, avoid conflicting versions and wasted work/time.
 
-### Initial product backlog and sprint plan (1st draft john)
+### Group Initial product backlog and sprint plan
 
 We will develop the BRFN marketplace in stages following the sprint time periods. 
 The aim is to agree on the main requirements first, then model the business processes before moving on to implementation and testing. 
