@@ -210,11 +210,11 @@ All payment items use a test environment only (e.g. Stripe test mode), as the br
    
 ##### Main exceptions:
 
-• Item unavailable: the customer amends the basket and it's validated again.
-• Slot under 48h: the customer picks a new date.
-• Producer doesn't reply in 24h (timer): that sub-order is dropped and admin is told.
-• Payment fails: up to 3 retries, then cancel and tell the producers.
-• Customer doesn't pay within 30 minutes (timer): order withdrawn and the producers are told.
+- Item unavailable: the customer amends the basket and it's validated again.
+- Slot under 48h: the customer picks a new date.
+- Producer doesn't reply in 24h (timer): that sub-order is dropped and admin is told.
+- Payment fails: up to 3 retries, then cancel and tell the producers.
+- Customer doesn't pay within 30 minutes (timer): order withdrawn and producers are told.
 
 #### Producer fulfilment and weekly settlement.
 ##### Part A: fulfilment
@@ -223,7 +223,7 @@ All payment items use a test environment only (e.g. Stripe test mode), as the br
 3. Shortage? (gateway): if yes, a partial refund through the payment provider.
 4. Delivery or collection? (gateway), leading to Mark dispatched or Mark collected (user task).
 5. Wait 48h for a problem report (event-based gateway). A report goes to Handle dispute (admin).
-6. Write ledger entry (service task), which is the audit trail. End.
+6. Write ledger entry (service task), which is the audit trail.
 ##### Part B: weekly settlement (timer, every Monday)
 1. Collect last week's fulfilled sub-orders per producer (service task).
 2. Open disputes? (gateway): disputed amounts are held until next week.
@@ -231,14 +231,14 @@ All payment items use a test environment only (e.g. Stripe test mode), as the br
 4. Generate statement (service task): a CSV or PDF suitable for tax records.
 5. Send payout (service task calling the payment provider), then email the statement. End.
 ##### Main exceptions
-• Producer hasn't prepared by the slot: escalated to admin, who can cancel and refund.
-• Customer no-show at collection (timer): admin decides.
-• Payout fails: retry, then the producer updates their bank details.
+- Producer hasn't prepared by the slot: escalated to admin, who can cancel and refund.
+- Customer no-show at collection will be timed according to the admin.
+- Payout fails: retry, then the producer updates their bank details.
 
 ### Out of scope:
 An option for producers to import their existing CSV files into the program, automatically listing their stock. We could also integrate links for their social media.
 Incoming orders can be coloured green, yellow or red. Green if <24 hours, Yellow if 24 > 48 and red if exceeding 48 hours.
-Recommendations based on a recommendation algorithm such as item-based collaborative filtering. It is basically 'Customers who bought X also bought Y'. Also a review and rating page for each shop and products. Order history.
+Recommendations based on a recommendation algorithm such as item-based collaborative filtering. Order history to show a customer's past orders.
 
 ### Use Case 2 - Analysis of major business processes and organisational processes (2nd draft john)
 
