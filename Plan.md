@@ -238,9 +238,11 @@ In docs/models
 - Payout fails: retry, then the producer updates their bank details.
 
 ### Out of scope:
-An option for producers to import their existing CSV files into the program, automatically listing their stock. We could also integrate links for their social media.
-Incoming orders can be coloured green, yellow or red. Green if <24 hours, Yellow if 24 > 48 and red if exceeding 48 hours.
-Recommendations based on a recommendation algorithm such as item-based collaborative filtering. Order history to show a customer's past orders.
+- A function for producers to import their existing CSV files into the program, automatically listing their stock.
+- Links to producer's social media integrated into their storefront pages.
+- Incoming orders can be coloured green, yellow or red. Green if <24 hours, Yellow if 24 > 48 and red if exceeding 48 hours.
+- Product recommendations for customers based on a recommendation algorithm such as item-based collaborative filtering.
+- Order history to show a customer's past orders.
 
 ### Use Case 2 - Analysis of major business processes and organisational processes (2nd draft john)
 
