@@ -50,4 +50,8 @@ The marketplace also relies on the Payment Service to process customer payments 
 
 Producers rely on the marketplace to provide accurate order details and notifications so they can prepare the correct products. The marketplace may also rely on the BRFN Administrator to investigate non-responders, disputes, fulfilment problems or settlement issues. In turn, the administrator relies on the marketplace for access to the relevant records.
 
-## simple diagram displaying this (needs doing  ! !)
+## Strategic Dependency Model Diagram
+
+The following diagram shows the main actors involved with the BFRN marketplace and the dependencies between them.
+
+![Strategic Dependency Model](SD-model.png)

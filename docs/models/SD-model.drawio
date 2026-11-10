@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="CyjyyP9jklgFCnTxli5-">
+    <mxGraphModel dx="814" dy="1072" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="38x-UJaCnmQto-4n--35-16" edge="1" parent="1" source="38x-UJaCnmQto-4n--35-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;" value="Goal - Browse and place&lt;div&gt;&amp;nbsp;multi-vendor orders.&lt;/div&gt;&lt;div&gt;Resource - Product, Price and&lt;/div&gt;&lt;div&gt;&amp;nbsp;availability information.&lt;/div&gt;&lt;div&gt;Resource - Order confirmations&lt;/div&gt;&lt;div&gt;and updates.&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.0008" y="50" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="349.9999999999999" y="289.8571428571429" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="38x-UJaCnmQto-4n--35-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Customer" vertex="1">
+          <mxGeometry height="80" width="120" x="40" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="38x-UJaCnmQto-4n--35-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Payment service" vertex="1">
+          <mxGeometry height="80" width="120" x="668" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="38x-UJaCnmQto-4n--35-32" edge="1" parent="1" source="38x-UJaCnmQto-4n--35-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="38x-UJaCnmQto-4n--35-10" value="Resource - Accurate order&lt;div&gt;details and notifications.&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.5547" y="20" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="38x-UJaCnmQto-4n--35-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Producer" vertex="1">
+          <mxGeometry height="80" width="120" x="40" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="38x-UJaCnmQto-4n--35-33" edge="1" parent="1" source="38x-UJaCnmQto-4n--35-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" target="38x-UJaCnmQto-4n--35-10" value="Resource - Access to&lt;div&gt;order and producer records.&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.5628" y="-20" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="430" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="38x-UJaCnmQto-4n--35-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="BRFN Admin" vertex="1">
+          <mxGeometry height="80" width="120" x="668" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="38x-UJaCnmQto-4n--35-17" edge="1" parent="1" source="38x-UJaCnmQto-4n--35-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="38x-UJaCnmQto-4n--35-7" value="Task - Process customer payments&lt;div&gt;and return transaction result.&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0103" y="20" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="38x-UJaCnmQto-4n--35-20" edge="1" parent="1" source="38x-UJaCnmQto-4n--35-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="38x-UJaCnmQto-4n--35-8" value="Resource - Product&lt;div&gt;information and availability.&lt;/div&gt;&lt;div&gt;Task - Respond to&lt;/div&gt;&lt;div&gt;&amp;nbsp;order requests.&lt;/div&gt;&lt;div&gt;Task - Fulfil accepted&lt;/div&gt;&lt;div&gt;sub orders.&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0714" y="50" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="250" y="310" />
+              <mxPoint x="250" y="370" />
+              <mxPoint x="100" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="38x-UJaCnmQto-4n--35-22" edge="1" parent="1" source="38x-UJaCnmQto-4n--35-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="38x-UJaCnmQto-4n--35-9" value="Task - Resolve disputes&lt;div&gt;and operational problems.&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0635" y="-20" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="580" y="310" />
+              <mxPoint x="580" y="370" />
+              <mxPoint x="728" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="38x-UJaCnmQto-4n--35-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="BRFN Marketplace" vertex="1">
+          <mxGeometry height="80" width="120" x="354" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="38x-UJaCnmQto-4n--35-26" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;font-weight: 400; text-align: center;&quot;&gt;Strategic Dependency Model&lt;/span&gt;&lt;/h1&gt;&lt;p style=&quot;text-align: center;&quot;&gt;This demonstrates how each actor depends on each other to complete goals, provide resources, and to complete tasks for one another.&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="120" width="316" x="256" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="38x-UJaCnmQto-4n--35-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Goal - An outcome needed.&lt;div&gt;Task - An activity to be completed.&lt;/div&gt;&lt;div&gt;Resource - Information or something needed.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="280" x="274" y="630" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
