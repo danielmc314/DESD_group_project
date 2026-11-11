@@ -140,19 +140,6 @@ However, there are still a few details that need to be checked with the group be
 | Multiple producers | The marketplace communicates with producers. | Check how orders will be separated when customers buy from different producers. |
 | 48-hour preparation time | This is not clearly shown in the current diagram. | Decide how the system will make sure producers have enough preparation time. |
 
-### 7.1 Things to Discuss Before Implementation
-
-Before starting the Camunda implementation, there are a few things that the group still needs to agree on:
-
-- How the system will check available stock and update it after an order.
-- How many times a customer can retry a declined payment.
-- What should happen if the payment service is unavailable.
-- How the marketplace will calculate its 5% commission.
-- How producer payments and transaction history will be recorded.
-- How the system will handle the minimum 48-hour preparation time.
-
-These details will help us make sure that the process variables and business rules work correctly with the final BPMN diagrams.
-
-### 7.2 Conclusion
+### 7.1 Conclusion
 
 This document is an initial guide for the process variables, gateways and business logic needed for Case 2. Some details may change as the group discusses the design and starts working on the Camunda implementation. I will update the document when the final decisions have been agreed with the group.
