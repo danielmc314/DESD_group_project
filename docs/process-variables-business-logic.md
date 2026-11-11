@@ -120,3 +120,39 @@ The implementation will need to match the operational BPMN diagrams and the user
 ## 6. Notes
 
 This document is an initial plan for the process variables, gateways and business logic. Some details may need to change once the group has agreed on the final BPMN diagrams and started implementing the process in Camunda.
+
+## 7. Checking the BPMN Diagram Against the Business Logic
+
+After looking at our group's BPMN diagram, I compared it with the process variables and business rules in this document. Most of the main steps, such as placing an order, processing payment and sending messages to customers and producers, are already included in the diagram.
+
+However, there are still a few details that need to be checked with the group before we start the Camunda implementation.
+
+| Requirement | What is shown in the BPMN diagram | What still needs to be checked |
+|---|---|---|
+| Order placement | The customer can place an order. | Make sure the order details are stored correctly. |
+| Stock availability | There is a gateway to check whether an order is possible. | Check that it compares the requested quantity with the available stock. |
+| Payment processing | The marketplace processes the payment and checks whether it is approved. | Make sure the payment result is stored correctly. |
+| Payment retry | The customer can follow a retry path. | Agree on how many payment attempts should be allowed. |
+| Order confirmation | The marketplace sends messages to the customer and producer. | Make sure confirmation is only sent after successful payment. |
+| Stock update | This is not clearly shown in the current diagram. | Decide where the stock should be reduced after payment. |
+| Marketplace commission | This is not clearly shown in the current diagram. | Include the 5% commission calculation. |
+| Producer payments | The producer receives and fulfils the order. | Agree on how producer payments and transaction records will be managed. |
+| Multiple producers | The marketplace communicates with producers. | Check how orders will be separated when customers buy from different producers. |
+| 48-hour preparation time | This is not clearly shown in the current diagram. | Decide how the system will make sure producers have enough preparation time. |
+
+### 7.1 Things to Discuss Before Implementation
+
+Before starting the Camunda implementation, there are a few things that the group still needs to agree on:
+
+- How the system will check available stock and update it after an order.
+- How many times a customer can retry a declined payment.
+- What should happen if the payment service is unavailable.
+- How the marketplace will calculate its 5% commission.
+- How producer payments and transaction history will be recorded.
+- How the system will handle the minimum 48-hour preparation time.
+
+These details will help us make sure that the process variables and business rules work correctly with the final BPMN diagrams.
+
+### 7.2 Conclusion
+
+This document is an initial guide for the process variables, gateways and business logic needed for Case 2. Some details may change as the group discusses the design and starts working on the Camunda implementation. I will update the document when the final decisions have been agreed with the group.
