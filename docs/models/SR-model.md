@@ -17,7 +17,7 @@ This model is based on the two main functions currently described in the group p
   - Buy products from local producers
   - Receive the correct items
 
-**Desires**
+**SoftGoal**
   - Have a clear ordering experience
   - Receive reliable order updates
 
@@ -40,7 +40,7 @@ This model is based on the two main functions currently described in the group p
   - Support producer fulfilment
   - Keep accurate payment and settlement records
 
-**Desires**
+**SoftGoal**
   - Reliable order processing
   - Accurate financial records
   - Clear communication between customers and producers
@@ -69,7 +69,7 @@ This model is based on the two main functions currently described in the group p
   - Get paid accurately
   - Keep product listings up to date
 
-**Desires**
+**SoftGoal**
   - Receive clear order and fulfilment information
   - Receive reliable settlement details
 
@@ -92,7 +92,7 @@ This model is based on the two main functions currently described in the group p
   - Process customer payments
   - Process producer payouts
 
-**Desires**
+**SoftGoal**
   - Reliable transaction processing
   - Accurate transaction results
 
@@ -113,7 +113,7 @@ This model is based on the two main functions currently described in the group p
   - Help keep the marketplace running
   - Resolve operational problems
 
- **Desires**
+ **SoftGoal**
   - Keep records accurate
   - Deal with issues effectively
 
@@ -141,4 +141,8 @@ The SR model should match the other models created by the group. The Strategic D
 
 If a responsibility or process changes in one of the other models, we should check whether the SR model also needs updating. This will help keep the models consistent as the project develops.
 
-## simple diagram displaying this (needs doing  ! !)
+## Strategic Rationale Model Diagram
+
+This diagram demonstrates the goals/ softgoals/ tasks/ resources that each actor wants to achieve and need to do.
+
+![Strategic Rationale Model](SR-model.png)
