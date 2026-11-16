@@ -1,0 +1,33 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "64767e4"
+  },
+  "schemaVersion": 19,
+  "id": "Form_1r2p7ox",
+  "components": [
+    {
+      "label": "would you like to retry payment",
+      "values": [
+        {
+          "label": "Retry payment",
+          "value": "True"
+        },
+        {
+          "label": "cancel order",
+          "value": "False"
+        }
+      ],
+      "type": "radio",
+      "layout": {
+        "row": "Row_0im8h5a",
+        "columns": null
+      },
+      "id": "Field_16dxbmz",
+      "key": "retryPayment"
+    }
+  ],
+  "type": "default"
+}

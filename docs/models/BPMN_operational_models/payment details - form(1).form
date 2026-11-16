@@ -1,0 +1,96 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "64767e4"
+  },
+  "schemaVersion": 19,
+  "id": "payment_details_form",
+  "components": [
+    {
+      "label": "Group",
+      "components": [
+        {
+          "label": "first name",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_1uztkk6",
+            "columns": null
+          },
+          "id": "Field_076xggp",
+          "key": "firstName"
+        },
+        {
+          "label": "last name",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_1uztkk6",
+            "columns": null
+          },
+          "id": "Field_05mc6gu",
+          "key": "lastName"
+        },
+        {
+          "label": "email address",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_1uztkk6",
+            "columns": null
+          },
+          "id": "Field_1yx45h3",
+          "key": "email"
+        },
+        {
+          "label": "card number",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_1uztkk6",
+            "columns": null
+          },
+          "id": "Field_0voe9w2",
+          "key": "CardNumber"
+        },
+        {
+          "label": "sort-code",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_1uztkk6",
+            "columns": null
+          },
+          "id": "Field_0sy7s8j",
+          "key": "sortCode"
+        },
+        {
+          "label": "csv",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_1uztkk6",
+            "columns": null
+          },
+          "id": "Field_19bxm6n",
+          "key": "csv"
+        },
+        {
+          "subtype": "date",
+          "dateLabel": "expiry date",
+          "type": "datetime",
+          "layout": {
+            "row": "Row_1uztkk6",
+            "columns": null
+          },
+          "id": "Field_1nz0xcu",
+          "key": "expiryDate"
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_09subn5",
+        "columns": null
+      },
+      "id": "Field_09rhzdf"
+    }
+  ],
+  "type": "default"
+}
