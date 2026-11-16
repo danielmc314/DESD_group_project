@@ -1,0 +1,32 @@
+{
+  "components": [
+    {
+      "text": "# Mark the order as collected",
+      "type": "text",
+      "layout": {
+        "row": "Row_0lytrbj",
+        "columns": null
+      },
+      "id": "Field_1nxmd6t"
+    },
+    {
+      "label": "Collected?",
+      "action": "submit",
+      "type": "button",
+      "layout": {
+        "row": "Row_1qffo5m",
+        "columns": null
+      },
+      "id": "Field_1r72oxm"
+    }
+  ],
+  "type": "default",
+  "id": "markCollected",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.52.0"
+  },
+  "schemaVersion": 19
+}

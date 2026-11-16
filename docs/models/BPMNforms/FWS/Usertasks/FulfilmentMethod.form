@@ -1,0 +1,34 @@
+{
+  "components": [
+    {
+      "label": "Delivery or collection?",
+      "values": [
+        {
+          "label": "Delivery",
+          "value": "delivery"
+        },
+        {
+          "label": "Collection",
+          "value": "collection"
+        }
+      ],
+      "type": "radio",
+      "layout": {
+        "row": "Row_1gd7y4j",
+        "columns": null
+      },
+      "id": "Field_1f6zrp7",
+      "key": "fulfilmentMethod",
+      "defaultValue": "delivery"
+    }
+  ],
+  "type": "default",
+  "id": "Form_0978bcb",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.52.0"
+  },
+  "schemaVersion": 19
+}

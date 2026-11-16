@@ -1,0 +1,62 @@
+{
+  "components": [
+    {
+      "text": "# Update your bank details",
+      "type": "text",
+      "layout": {
+        "row": "Row_0qj41dt",
+        "columns": null
+      },
+      "id": "Field_0hipeet"
+    },
+    {
+      "label": "Account name",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_08ovvvj",
+        "columns": null
+      },
+      "id": "Field_1ihvxmh",
+      "key": "textfield_qs4uy"
+    },
+    {
+      "label": "Account number",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1muc6nj",
+        "columns": null
+      },
+      "id": "Field_1681fyu",
+      "key": "textfield_rgbebf"
+    },
+    {
+      "label": "CVV",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1i0p7ee",
+        "columns": null
+      },
+      "id": "Field_0mt1kk6",
+      "key": "textfield_0p9pxp"
+    },
+    {
+      "label": "Enter",
+      "action": "submit",
+      "type": "button",
+      "layout": {
+        "row": "Row_15fi2et",
+        "columns": null
+      },
+      "id": "Field_1271ecl"
+    }
+  ],
+  "type": "default",
+  "id": "updateBank",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.52.0"
+  },
+  "schemaVersion": 19
+}

@@ -1,0 +1,32 @@
+{
+  "components": [
+    {
+      "text": "# Press button when the order is ready for collection",
+      "type": "text",
+      "layout": {
+        "row": "Row_16xc9on",
+        "columns": null
+      },
+      "id": "Field_1di4i4s"
+    },
+    {
+      "label": "Button",
+      "action": "submit",
+      "type": "button",
+      "layout": {
+        "row": "Row_00jpt6g",
+        "columns": null
+      },
+      "id": "Field_1myf48g"
+    }
+  ],
+  "type": "default",
+  "id": "updateOrderCol",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.52.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.24.0",
+  "schemaVersion": 19
+}
