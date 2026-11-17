@@ -31,6 +31,10 @@ Process variables are used to store information while the order process is runni
 | itemAvailability | List | Stores the stock availability result for each order item. |
 | unavailableItems | List | Stores products that are unavailable or have insufficient stock. |
 | orderValidity | Boolean | Shows whether the order is valid based on the validation results. |
+| dateAvailability | List | Stores the date validation result for each order item. |
+| dateValid | Boolean | Shows whether a product meets the requested fulfilment date. |
+
+The date check also uses `customerOrder.requestedFulfilmentDate` and `product.bestBeforeDate` to compare the requested fulfilment date with the product's best-before date.
 
 The final variable names and data types will be agreed with the group when the Camunda process is developed.
 
