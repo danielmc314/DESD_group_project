@@ -146,3 +146,31 @@ However, there are still a few details that need to be checked with the group be
 ### 7.1 Conclusion
 
 This document is an initial guide for the process variables, gateways and business logic needed for Case 2. Some details may change as the group discusses the design and starts working on the Camunda implementation. I will update the document when the final decisions have been agreed with the group.
+
+## 8. Camunda Implementation
+
+I have started looking at how the process variables and business rules can be used in Camunda. So far, I have worked on the stock availability check and order validation.
+
+### 8.1 Stock Availability
+
+I used a Script Task called `check product stock and availability` to check whether the products in a customer's order are available.
+
+The script uses `itemAvailability` to store the result for each order item. It checks whether the product is in the inventory, is active and has enough stock for the quantity requested by the customer.
+
+It also checks that the requested quantity is greater than zero.
+
+### 8.2 Order Validation
+
+After checking the stock, the process moves on to order validation.
+
+I used another Script Task called `record order validation results`. Its result variable is `orderValidity`.
+
+The FEEL expression checks the `unavailableItems` list. If the list is empty, `orderValidity` is true, which means the order is valid. If the list contains unavailable items, the result is false.
+
+### 8.3 Order Validity Gateway
+
+The gateway named `is order valid` decides what happens next.
+
+I used the condition `orderValidity = true` for the yes path. If the order is valid, the process continues and sends the order summary. If it is not valid, the customer is informed so they can amend the order.
+
+I will continue checking these steps against the group's BPMN diagram as the Camunda implementation develops.
