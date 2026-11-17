@@ -28,6 +28,9 @@ Process variables are used to store information while the order process is runni
 | commissionRate | Number | Stores the marketplace commission rate. |
 | commissionAmount | Number | Stores the commission amount. |
 | producerAmount | Number | Stores the amount due to the producer. |
+| itemAvailability | List | Stores the stock availability result for each order item. |
+| unavailableItems | List | Stores products that are unavailable or have insufficient stock. |
+| orderValidity | Boolean | Shows whether the order is valid based on the validation results. |
 
 The final variable names and data types will be agreed with the group when the Camunda process is developed.
 
