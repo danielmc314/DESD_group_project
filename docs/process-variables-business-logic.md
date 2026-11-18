@@ -178,3 +178,37 @@ The gateway named `is order valid` decides what happens next.
 I used the condition `orderValidity = true` for the yes path. If the order is valid, the process continues and sends the order summary. If it is not valid, the customer is informed so they can amend the order.
 
 I will continue checking these steps against the group's BPMN diagram as the Camunda implementation develops.
+
+### 8.4 Payment Result and Retry Logic
+
+After the customer makes a payment, the system checks the result from the payment service. The `paymentStatus` variable is used to store the result.
+
+- If the payment is successful, the status is set to `"Success"` and the order can move on to confirmation.
+- If the payment is declined, the status is set to `"Declined"` and the customer is informed.
+- The payment result gateway checks the status and decides which path the process should follow.
+
+The system also uses `paymentRetryCount` to keep track of how many times the customer has tried to make a payment.
+
+If the customer is allowed to try again, the payment process can start again. If no more attempts are allowed, the order should be cancelled or handled using the error process agreed by the group.
+
+The maximum number of payment attempts still needs to be discussed and agreed with the group.
+
+### 8.5 Commission Calculation Logic
+
+The marketplace keeps 5% of the order total as commission. The remaining amount goes to the producer.
+
+The following variables are used for this calculation:
+
+- `orderTotal` stores the total order amount.
+- `commissionRate` stores the commission rate (0.05).
+- `commissionAmount` stores the amount kept by the marketplace.
+- `producerAmount` stores the amount the producer receives.
+
+The calculation is:
+
+- `commissionAmount = orderTotal * commissionRate`
+- `producerAmount = orderTotal - commissionAmount`
+
+For example, if the order total is £100, the marketplace keeps £5 and the producer receives £95.
+
+This calculation will need to be checked against the final payment process agreed by the group, especially when an order includes products from more than one producer.
