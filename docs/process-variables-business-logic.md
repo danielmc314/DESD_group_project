@@ -191,7 +191,7 @@ The system also uses `paymentRetryCount` to keep track of how many times the cus
 
 If the customer is allowed to try again, the payment process can start again. If no more attempts are allowed, the order should be cancelled or handled using the error process agreed by the group.
 
-The maximum number of payment attempts still needs to be discussed and agreed with the group.
+The customer can retry a declined payment up to 3 times. This means there can be one initial payment attempt and up to 3 additional attempts. If all attempts fail, the order should be cancelled or handled through the agreed error process.
 
 ### 8.5 Commission Calculation Logic
 
@@ -211,4 +211,4 @@ The calculation is:
 
 For example, if the order total is £100, the marketplace keeps £5 and the producer receives £95.
 
-This calculation will need to be checked against the final payment process agreed by the group, especially when an order includes products from more than one producer.
+The 5% commission will be calculated for each producer's part of the order. It will also be calculated on the overall order total. The overall commission should match the sum of the commissions calculated for each producer. This will help keep the payment amounts clear and make it easier to check the totals.
