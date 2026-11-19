@@ -129,13 +129,13 @@ This model is based on the two main functions currently described in the group p
   - Dispute information
   - Settlement records
 
-**## How relationships are used in the SR model**
+## How relationships are used in the SR model
 
 The SR model uses different relationships to show how each actor works towards their goals. Decomposition is used to break down a larger task or goal into smaller parts. For example, completing checkout involves creating a basket, checking product availability and confirming the order. Relationships to show how a task helps achieve a goal. For example, splitting orders between producers helps the marketplace coordinate multi-vendor orders. Contribution relationships show how a task or resource helps achieve a desired outcome. For example, sending clear order notifications helps improve communication between the marketplace and producers.
 
 These relationships help show how each actor's tasks and resources support their goals and desires.
 
-**## Consistency with the other models**
+### Consistency with the other models
 
 The SR model should match the other models created by the group. The Strategic Dependency model shows which actors depend on each other and what they need, while the Strategic Rationale model looks at each actor's goals, tasks and resources in more detail. The Strategic BPMN model gives an overview of the business processes and responsibilities, and the Operational BPMN models show the detailed steps, decisions and interactions involved in those processes. The Camunda workflows are then used to implement the agreed processes.
 
