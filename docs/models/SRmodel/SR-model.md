@@ -1,5 +1,21 @@
 # i* Strategic Rationale Model
 
+## How the diagram works
+
+There are 5 different symbols in the diagrams.
+- Circle: is an Actor. It could be a person, system, role, but importantly it has it's own goals and relies on others.
+- Round edge rectangle: is a Hard Goal. It is the outcome.
+- Hexagon: is a Task. It specifies a activity.
+- Rectangle: is a Resource. It could provide information or a thing.
+- Wavy: is a Soft Goal. It is a desired quality of outcome.
+
+And different connecting lines.
+- Has a 'D': Represents a dependency. The round side points to the actor being relied on. Depender, Dependum, Dependee.
+- Has a '|': Represents AND. Every child part must be fulfilled for the Task to happen.
+- Has a filled arrow: Represents OR. The goal has multiple paths to be achieved.
+- Has a hollow arrow with make/help/hurt: Represents a very positive, positive or negative effect on the soft goal/ quality.
+- Has a dot: Represents a task needing a resource.
+
 ## Purpose
 
 The Strategic Rationale model looks at each actor and shows what they want to achieve and what they need to do. It identifies their goals, tasks and resources, and shows how these elements contribute to one another.
@@ -145,4 +161,4 @@ If a responsibility or process changes in one of the other models, we should che
 
 This diagram demonstrates the goals/ softgoals/ tasks/ resources that each actor wants to achieve and need to do.
 
-![Strategic Rationale Model](SR-model.png)
+![Strategic Rationale Model](SRdiagram.png)
