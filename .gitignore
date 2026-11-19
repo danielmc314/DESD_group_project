@@ -1,0 +1,17 @@
+
+# Python virtual environments
+.venv/
+
+# Camunda API credentials
+.env
+*.env
+credentials.sh
+credentials*.ps1
+*-env.sh
+
+# Python generated files
+__pycache__/
+*.pyc
+
+# VS Code local settings
+.vscode/
