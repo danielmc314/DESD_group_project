@@ -54,4 +54,4 @@ Producers rely on the marketplace to provide accurate order details and notifica
 
 The following diagram shows the main actors involved with the BFRN marketplace and the dependencies between them.
 
-![Strategic Dependency Model](SD-model.png)
+![Strategic Dependency Model](SDdiagram.png)
