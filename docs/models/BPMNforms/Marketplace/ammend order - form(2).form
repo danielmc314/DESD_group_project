@@ -1,0 +1,92 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "6a0669f"
+  },
+  "schemaVersion": 19,
+  "id": "customer_order_form",
+  "components": [
+    {
+      "label": "Group",
+      "components": [
+        {
+          "type": "table",
+          "layout": {
+            "row": "Row_15bspoy",
+            "columns": null
+          },
+          "label": "unavailableProducts",
+          "dataSource": "=unavailableItems",
+          "rowCount": 10,
+          "id": "Field_0yxwlcy",
+          "columns": [
+            {
+              "key": "productId",
+              "label": "Product"
+            },
+            {
+              "key": "stockAvailable",
+              "label": "Stock Available"
+            },
+            {
+              "key": "dateValid",
+              "label": "Date valid"
+            }
+          ]
+        },
+        {
+          "label": "Amend order items",
+          "components": [
+            {
+              "label": "Product ID",
+              "type": "textfield",
+              "layout": {
+                "row": "Row_12g4xvm",
+                "columns": null
+              },
+              "id": "Field_1x5yynm",
+              "key": "productId"
+            },
+            {
+              "label": "Requested Quantity",
+              "type": "number",
+              "layout": {
+                "row": "Row_12g4xvm",
+                "columns": null
+              },
+              "id": "Field_1677scx",
+              "key": "requestedQuantity",
+              "properties": { },
+              "validate": {
+                "required": true,
+                "min": "1"
+              }
+            }
+          ],
+          "showOutline": true,
+          "isRepeating": true,
+          "allowAddRemove": true,
+          "defaultRepetitions": null,
+          "type": "dynamiclist",
+          "layout": {
+            "row": "Row_1aqdfqw",
+            "columns": null
+          },
+          "id": "Field_1ve45pu",
+          "path": "amendedOrder",
+          "disableCollapse": true
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_0pc8uz7",
+        "columns": null
+      },
+      "id": "Field_0z06n0o"
+    }
+  ],
+  "type": "default"
+}
