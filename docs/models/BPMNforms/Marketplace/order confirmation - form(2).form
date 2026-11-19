@@ -1,0 +1,71 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "6a0669f"
+  },
+  "schemaVersion": 19,
+  "id": "Form_0lcj5c9",
+  "components": [
+    {
+      "label": "Group",
+      "components": [
+        {
+          "type": "table",
+          "layout": {
+            "row": "Row_172oxhy",
+            "columns": null
+          },
+          "label": "order details",
+          "dataSource": "=customerOrder.orderItems",
+          "rowCount": 10,
+          "id": "Field_07utwg6",
+          "columns": [
+            {
+              "key": "productId",
+              "label": "product id"
+            },
+            {
+              "key": "quantity",
+              "label": "quantity"
+            },
+            {
+              "key": "price",
+              "label": "price per item"
+            }
+          ]
+        },
+        {
+          "label": "confirm order",
+          "values": [
+            {
+              "label": "confirm order",
+              "value": "confirm"
+            },
+            {
+              "label": "cancel order",
+              "value": "cancel"
+            }
+          ],
+          "type": "radio",
+          "layout": {
+            "row": "Row_1c9mlet",
+            "columns": null
+          },
+          "id": "Field_1fsow4t",
+          "key": "confirmOrder",
+          "properties": { }
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_0rp0x19",
+        "columns": null
+      },
+      "id": "Field_0oai9pr"
+    }
+  ],
+  "type": "default"
+}

@@ -33,6 +33,8 @@ Process variables store information while an order process is running. The follo
 | orderValidity | Boolean | Shows whether the order is valid based on the validation results. |
 | dateAvailability | List | Stores the date validation result for each order item. |
 | dateValid | Boolean | Shows whether a product meets the requested fulfilment date. |
+|requestedFulfilmentDate | date | shows customers wanted delivery date |
+|collectionType | string | shows customers preferred means of delivery |
 
 The date check also uses `customerOrder.requestedFulfilmentDate` and `product.bestBeforeDate`. These values are compared to check whether the requested fulfilment date is suitable for the product.
 
