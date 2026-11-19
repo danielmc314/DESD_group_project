@@ -1,0 +1,540 @@
+{
+  "actors": [
+    {
+      "id": "50106c12-d4d8-4782-a559-31c6452427a9",
+      "text": "Customer",
+      "type": "istar.Actor",
+      "x": 306,
+      "y": 446,
+      "customProperties": {
+        "Description": ""
+      },
+      "nodes": []
+    },
+    {
+      "id": "3081f075-4489-4c76-b796-95a6c703e46a",
+      "text": "BRFN Market",
+      "type": "istar.Actor",
+      "x": 875,
+      "y": 455,
+      "customProperties": {
+        "Description": "BRFN marketplace: the web platform and the network operations behind it"
+      },
+      "nodes": []
+    },
+    {
+      "id": "29366ed1-ed34-4fa5-a64d-d0f4da875f22",
+      "text": "Payment Service",
+      "type": "istar.Actor",
+      "x": 1426,
+      "y": 452,
+      "customProperties": {
+        "Description": ""
+      },
+      "nodes": []
+    },
+    {
+      "id": "bed51e58-5b0c-4d56-88c2-58fd7aefe531",
+      "text": "Producer",
+      "type": "istar.Actor",
+      "x": 885,
+      "y": 795,
+      "customProperties": {
+        "Description": ""
+      },
+      "nodes": []
+    },
+    {
+      "id": "88a8f4f0-ae29-4c27-b9cd-a7e6faa4f33c",
+      "text": "BRFN Admin",
+      "type": "istar.Actor",
+      "x": 875,
+      "y": 211,
+      "customProperties": {
+        "Description": ""
+      },
+      "nodes": []
+    }
+  ],
+  "orphans": [],
+  "dependencies": [
+    {
+      "id": "d03f8164-a275-4ac2-90bd-3050f84b5b03",
+      "text": "Multi-vendor order placed",
+      "type": "istar.Goal",
+      "x": 492,
+      "y": 310,
+      "customProperties": {
+        "Description": "Evidence: case study / Plan.md - multi-vendor checkout. Goal because Marketplace decides how."
+      },
+      "source": "50106c12-d4d8-4782-a559-31c6452427a9",
+      "target": "3081f075-4489-4c76-b796-95a6c703e46a"
+    },
+    {
+      "id": "b66a2498-693f-491a-82dd-c56df282028a",
+      "text": "Product, price and availability information",
+      "type": "istar.Resource",
+      "x": 496,
+      "y": 516,
+      "customProperties": {
+        "Description": "Evidence: case study - browsing with harvest dates, origin and availability."
+      },
+      "source": "50106c12-d4d8-4782-a559-31c6452427a9",
+      "target": "3081f075-4489-4c76-b796-95a6c703e46a"
+    },
+    {
+      "id": "806b7815-2e76-4475-9b46-40e4bfc4b4b4",
+      "text": "Order confirmation and updates",
+      "type": "istar.Resource",
+      "x": 497,
+      "y": 456,
+      "customProperties": {
+        "Description": "Evidence: Marketplace.bpmn - send confirmation to customer."
+      },
+      "source": "50106c12-d4d8-4782-a559-31c6452427a9",
+      "target": "3081f075-4489-4c76-b796-95a6c703e46a"
+    },
+    {
+      "id": "741f1b58-3213-4aff-b6bc-e1de21d1cd25",
+      "text": "Clear supplier and delivery information",
+      "type": "istar.Quality",
+      "x": 492,
+      "y": 376,
+      "customProperties": {
+        "Description": "Evidence: case study - clear communication about supplier responsibilities, delivery and collection. Assumption: needs measurable criteria."
+      },
+      "source": "50106c12-d4d8-4782-a559-31c6452427a9",
+      "target": "3081f075-4489-4c76-b796-95a6c703e46a"
+    },
+    {
+      "id": "a2beedb0-16c5-4006-9c75-d23db0fe1822",
+      "text": "Product information and availability",
+      "type": "istar.Resource",
+      "x": 1004,
+      "y": 638,
+      "customProperties": {
+        "Description": "Evidence: producers list products, prices and availability windows (case study, CAT-01..03)."
+      },
+      "source": "3081f075-4489-4c76-b796-95a6c703e46a",
+      "target": "bed51e58-5b0c-4d56-88c2-58fd7aefe531"
+    },
+    {
+      "id": "9c2122a0-3a8d-45c2-a34d-85f67ab25b3a",
+      "text": "Respond to order requests",
+      "type": "istar.Task",
+      "x": 837,
+      "y": 630,
+      "customProperties": {
+        "Description": "Evidence: Plan.md - producer accepts, part-accepts or rejects within 24h. Task: response is specified."
+      },
+      "source": "3081f075-4489-4c76-b796-95a6c703e46a",
+      "target": "bed51e58-5b0c-4d56-88c2-58fd7aefe531"
+    },
+    {
+      "id": "ec85d361-ec58-4ebf-a8a2-532970593be1",
+      "text": "Accepted sub-orders fulfilled",
+      "type": "istar.Goal",
+      "x": 362,
+      "y": 630,
+      "customProperties": {
+        "Description": "Evidence: FWS.bpmn. Goal (outcome): Marketplace does not dictate how producer prepares or hands over."
+      },
+      "source": "3081f075-4489-4c76-b796-95a6c703e46a",
+      "target": "bed51e58-5b0c-4d56-88c2-58fd7aefe531"
+    },
+    {
+      "id": "9f2bc044-ab4a-440a-b196-029898013e8f",
+      "text": "Process customer payment",
+      "type": "istar.Task",
+      "x": 1097,
+      "y": 363,
+      "customProperties": {
+        "Description": "Evidence: Plan.md - Process payment (payment provider, test mode only)."
+      },
+      "source": "3081f075-4489-4c76-b796-95a6c703e46a",
+      "target": "29366ed1-ed34-4fa5-a64d-d0f4da875f22"
+    },
+    {
+      "id": "66e3f678-a770-4f9e-98d6-211467523ccd",
+      "text": "Payment result",
+      "type": "istar.Resource",
+      "x": 1105,
+      "y": 501,
+      "customProperties": {
+        "Description": "Evidence: process-variables doc - paymentStatus. Separates the information from the act of processing."
+      },
+      "source": "3081f075-4489-4c76-b796-95a6c703e46a",
+      "target": "29366ed1-ed34-4fa5-a64d-d0f4da875f22"
+    },
+    {
+      "id": "837fa8c9-7c46-49c4-8b3b-e1d019f72653",
+      "text": "Process producer payout",
+      "type": "istar.Task",
+      "x": 1095,
+      "y": 441,
+      "customProperties": {
+        "Description": "Evidence: VendorFulfilment.bpmn - send payout. Added to SD (settlement was missing)."
+      },
+      "source": "3081f075-4489-4c76-b796-95a6c703e46a",
+      "target": "29366ed1-ed34-4fa5-a64d-d0f4da875f22"
+    },
+    {
+      "id": "824a0f4d-868b-4eb1-bd14-f5be1b962fbc",
+      "text": "Disputes and operational problems resolved",
+      "type": "istar.Goal",
+      "x": 757,
+      "y": 315,
+      "customProperties": {
+        "Description": "Evidence: Plan.md - admin handles disputes and non-responding producers. Goal: admin chooses how."
+      },
+      "source": "3081f075-4489-4c76-b796-95a6c703e46a",
+      "target": "88a8f4f0-ae29-4c27-b9cd-a7e6faa4f33c"
+    },
+    {
+      "id": "9d03e099-76f4-4a79-8b5f-1788e6b2764f",
+      "text": "Access to order and producer records",
+      "type": "istar.Resource",
+      "x": 924,
+      "y": 306,
+      "customProperties": {
+        "Description": "Evidence: Plan.md ADM-02 - admin views all orders."
+      },
+      "source": "88a8f4f0-ae29-4c27-b9cd-a7e6faa4f33c",
+      "target": "3081f075-4489-4c76-b796-95a6c703e46a"
+    },
+    {
+      "id": "8f0b42af-e67f-48df-97f9-a86681274234",
+      "text": "Accurate order details and notifications",
+      "type": "istar.Resource",
+      "x": 1173,
+      "y": 639,
+      "customProperties": {
+        "Description": "Evidence: case study - producers need visibility of orders with adequate lead time."
+      },
+      "source": "bed51e58-5b0c-4d56-88c2-58fd7aefe531",
+      "target": "3081f075-4489-4c76-b796-95a6c703e46a"
+    },
+    {
+      "id": "415f584b-4eea-4fa2-8718-b8edaedb516c",
+      "text": "Adequate preparation lead time",
+      "type": "istar.Quality",
+      "x": 683,
+      "y": 623,
+      "customProperties": {
+        "Description": "Evidence: case study - minimum 48 hours. Quality because \"adequate\" needs interpretation; 48h is the proposed measure."
+      },
+      "source": "bed51e58-5b0c-4d56-88c2-58fd7aefe531",
+      "target": "3081f075-4489-4c76-b796-95a6c703e46a"
+    },
+    {
+      "id": "8e69e47e-4185-4c22-9f1a-86aefc07b2a5",
+      "text": "Weekly payout received",
+      "type": "istar.Goal",
+      "x": 526,
+      "y": 631,
+      "customProperties": {
+        "Description": "Evidence: case study - weekly payment settlements. Added to SD (settlement was missing)."
+      },
+      "source": "bed51e58-5b0c-4d56-88c2-58fd7aefe531",
+      "target": "3081f075-4489-4c76-b796-95a6c703e46a"
+    },
+    {
+      "id": "ce40532f-cd8a-4be7-a195-29020b2c5c1a",
+      "text": "Payment statement",
+      "type": "istar.Resource",
+      "x": 1343,
+      "y": 639,
+      "customProperties": {
+        "Description": "Evidence: case study - transparent audit trail for tax reporting. Added to SD."
+      },
+      "source": "bed51e58-5b0c-4d56-88c2-58fd7aefe531",
+      "target": "3081f075-4489-4c76-b796-95a6c703e46a"
+    }
+  ],
+  "links": [
+    {
+      "id": "b55689e0-312e-4aea-aff0-1575701e2705",
+      "type": "istar.DependencyLink",
+      "source": "ce40532f-cd8a-4be7-a195-29020b2c5c1a",
+      "target": "3081f075-4489-4c76-b796-95a6c703e46a"
+    },
+    {
+      "id": "fc5679f7-6e46-444d-ac57-ca207454f910",
+      "type": "istar.DependencyLink",
+      "source": "bed51e58-5b0c-4d56-88c2-58fd7aefe531",
+      "target": "ce40532f-cd8a-4be7-a195-29020b2c5c1a"
+    },
+    {
+      "id": "440c5655-f253-445b-800e-670b2a9ad1ae",
+      "type": "istar.DependencyLink",
+      "source": "8e69e47e-4185-4c22-9f1a-86aefc07b2a5",
+      "target": "3081f075-4489-4c76-b796-95a6c703e46a"
+    },
+    {
+      "id": "0afdd5f0-fa2b-42a7-ade1-31c9bd318d48",
+      "type": "istar.DependencyLink",
+      "source": "bed51e58-5b0c-4d56-88c2-58fd7aefe531",
+      "target": "8e69e47e-4185-4c22-9f1a-86aefc07b2a5"
+    },
+    {
+      "id": "231829d0-fe51-46b6-b3d3-18eb9a74fa61",
+      "type": "istar.DependencyLink",
+      "source": "415f584b-4eea-4fa2-8718-b8edaedb516c",
+      "target": "3081f075-4489-4c76-b796-95a6c703e46a"
+    },
+    {
+      "id": "1270863b-6737-48f0-ac7e-c1b8e493e1c6",
+      "type": "istar.DependencyLink",
+      "source": "bed51e58-5b0c-4d56-88c2-58fd7aefe531",
+      "target": "415f584b-4eea-4fa2-8718-b8edaedb516c"
+    },
+    {
+      "id": "06f68397-abd2-4985-acec-97df0d5653cf",
+      "type": "istar.DependencyLink",
+      "source": "8f0b42af-e67f-48df-97f9-a86681274234",
+      "target": "3081f075-4489-4c76-b796-95a6c703e46a"
+    },
+    {
+      "id": "fc5de2e7-4c94-495f-b55d-039df620fbdb",
+      "type": "istar.DependencyLink",
+      "source": "bed51e58-5b0c-4d56-88c2-58fd7aefe531",
+      "target": "8f0b42af-e67f-48df-97f9-a86681274234"
+    },
+    {
+      "id": "33d3fb3d-9c6f-440c-b3ed-71b417858300",
+      "type": "istar.DependencyLink",
+      "source": "9d03e099-76f4-4a79-8b5f-1788e6b2764f",
+      "target": "3081f075-4489-4c76-b796-95a6c703e46a"
+    },
+    {
+      "id": "d586a562-c79c-4c28-89a2-630d9ff0751f",
+      "type": "istar.DependencyLink",
+      "source": "88a8f4f0-ae29-4c27-b9cd-a7e6faa4f33c",
+      "target": "9d03e099-76f4-4a79-8b5f-1788e6b2764f"
+    },
+    {
+      "id": "d8e20dc9-a753-4fb4-8ba0-57b124589fa1",
+      "type": "istar.DependencyLink",
+      "source": "824a0f4d-868b-4eb1-bd14-f5be1b962fbc",
+      "target": "88a8f4f0-ae29-4c27-b9cd-a7e6faa4f33c"
+    },
+    {
+      "id": "c06e8061-b8ab-4e0a-b10b-4c5fb46e8f58",
+      "type": "istar.DependencyLink",
+      "source": "3081f075-4489-4c76-b796-95a6c703e46a",
+      "target": "824a0f4d-868b-4eb1-bd14-f5be1b962fbc"
+    },
+    {
+      "id": "4696d7a8-0c94-451f-9207-df175d412639",
+      "type": "istar.DependencyLink",
+      "source": "837fa8c9-7c46-49c4-8b3b-e1d019f72653",
+      "target": "29366ed1-ed34-4fa5-a64d-d0f4da875f22"
+    },
+    {
+      "id": "f5ade841-4cab-4db9-9662-8ec129976414",
+      "type": "istar.DependencyLink",
+      "source": "3081f075-4489-4c76-b796-95a6c703e46a",
+      "target": "837fa8c9-7c46-49c4-8b3b-e1d019f72653"
+    },
+    {
+      "id": "b6495763-476c-4444-a56c-cb28d425e49f",
+      "type": "istar.DependencyLink",
+      "source": "66e3f678-a770-4f9e-98d6-211467523ccd",
+      "target": "29366ed1-ed34-4fa5-a64d-d0f4da875f22"
+    },
+    {
+      "id": "4257094f-6f55-4ec7-8f6d-0c43a5a836b0",
+      "type": "istar.DependencyLink",
+      "source": "3081f075-4489-4c76-b796-95a6c703e46a",
+      "target": "66e3f678-a770-4f9e-98d6-211467523ccd"
+    },
+    {
+      "id": "f63f4bd0-ee11-4dd8-b088-da9d013366c4",
+      "type": "istar.DependencyLink",
+      "source": "9f2bc044-ab4a-440a-b196-029898013e8f",
+      "target": "29366ed1-ed34-4fa5-a64d-d0f4da875f22"
+    },
+    {
+      "id": "fb029f28-8fc4-4e90-a823-a6d16df78c21",
+      "type": "istar.DependencyLink",
+      "source": "3081f075-4489-4c76-b796-95a6c703e46a",
+      "target": "9f2bc044-ab4a-440a-b196-029898013e8f"
+    },
+    {
+      "id": "00d298d7-4de1-488e-a47b-964b33a1cd98",
+      "type": "istar.DependencyLink",
+      "source": "ec85d361-ec58-4ebf-a8a2-532970593be1",
+      "target": "bed51e58-5b0c-4d56-88c2-58fd7aefe531"
+    },
+    {
+      "id": "c55a839a-ed35-4c3c-a0fb-e11100152bd4",
+      "type": "istar.DependencyLink",
+      "source": "3081f075-4489-4c76-b796-95a6c703e46a",
+      "target": "ec85d361-ec58-4ebf-a8a2-532970593be1"
+    },
+    {
+      "id": "a485749e-1d47-4796-86ad-c8b8c927a197",
+      "type": "istar.DependencyLink",
+      "source": "9c2122a0-3a8d-45c2-a34d-85f67ab25b3a",
+      "target": "bed51e58-5b0c-4d56-88c2-58fd7aefe531"
+    },
+    {
+      "id": "ef46b79b-57da-4a23-aee6-9af6f0a8aec8",
+      "type": "istar.DependencyLink",
+      "source": "3081f075-4489-4c76-b796-95a6c703e46a",
+      "target": "9c2122a0-3a8d-45c2-a34d-85f67ab25b3a"
+    },
+    {
+      "id": "9bd2e84f-c5f8-4cfb-bc51-d76076b073e3",
+      "type": "istar.DependencyLink",
+      "source": "a2beedb0-16c5-4006-9c75-d23db0fe1822",
+      "target": "bed51e58-5b0c-4d56-88c2-58fd7aefe531"
+    },
+    {
+      "id": "d870881a-d862-4fc6-8318-513ed6fcaea9",
+      "type": "istar.DependencyLink",
+      "source": "3081f075-4489-4c76-b796-95a6c703e46a",
+      "target": "a2beedb0-16c5-4006-9c75-d23db0fe1822"
+    },
+    {
+      "id": "da171757-f00e-4d64-bd6d-381284c7792a",
+      "type": "istar.DependencyLink",
+      "source": "741f1b58-3213-4aff-b6bc-e1de21d1cd25",
+      "target": "3081f075-4489-4c76-b796-95a6c703e46a"
+    },
+    {
+      "id": "d2df36bb-802b-49e1-8907-932e7494421c",
+      "type": "istar.DependencyLink",
+      "source": "50106c12-d4d8-4782-a559-31c6452427a9",
+      "target": "741f1b58-3213-4aff-b6bc-e1de21d1cd25"
+    },
+    {
+      "id": "ea339b07-df86-479d-b8fe-5623c0663154",
+      "type": "istar.DependencyLink",
+      "source": "806b7815-2e76-4475-9b46-40e4bfc4b4b4",
+      "target": "3081f075-4489-4c76-b796-95a6c703e46a"
+    },
+    {
+      "id": "4298aa6b-9aea-4f18-b56e-76a720adea63",
+      "type": "istar.DependencyLink",
+      "source": "50106c12-d4d8-4782-a559-31c6452427a9",
+      "target": "806b7815-2e76-4475-9b46-40e4bfc4b4b4"
+    },
+    {
+      "id": "1ea46966-15b7-4030-9e86-7ce67a8c9cbc",
+      "type": "istar.DependencyLink",
+      "source": "b66a2498-693f-491a-82dd-c56df282028a",
+      "target": "3081f075-4489-4c76-b796-95a6c703e46a"
+    },
+    {
+      "id": "87224ec3-ab8d-4088-ac4b-3fd5745db10f",
+      "type": "istar.DependencyLink",
+      "source": "50106c12-d4d8-4782-a559-31c6452427a9",
+      "target": "b66a2498-693f-491a-82dd-c56df282028a"
+    },
+    {
+      "id": "8db5ff75-a281-4651-9758-b2330c3b110a",
+      "type": "istar.DependencyLink",
+      "source": "d03f8164-a275-4ac2-90bd-3050f84b5b03",
+      "target": "3081f075-4489-4c76-b796-95a6c703e46a"
+    },
+    {
+      "id": "b867de36-ae40-4f7a-9dd3-f2f805378e17",
+      "type": "istar.DependencyLink",
+      "source": "50106c12-d4d8-4782-a559-31c6452427a9",
+      "target": "d03f8164-a275-4ac2-90bd-3050f84b5b03"
+    }
+  ],
+  "display": {
+    "d03f8164-a275-4ac2-90bd-3050f84b5b03": {
+      "width": 150,
+      "height": 50
+    },
+    "b66a2498-693f-491a-82dd-c56df282028a": {
+      "width": 150,
+      "height": 46
+    },
+    "806b7815-2e76-4475-9b46-40e4bfc4b4b4": {
+      "width": 150,
+      "height": 46
+    },
+    "741f1b58-3213-4aff-b6bc-e1de21d1cd25": {
+      "width": 150,
+      "height": 70
+    },
+    "a2beedb0-16c5-4006-9c75-d23db0fe1822": {
+      "width": 150,
+      "height": 46
+    },
+    "9c2122a0-3a8d-45c2-a34d-85f67ab25b3a": {
+      "width": 160,
+      "height": 56
+    },
+    "ec85d361-ec58-4ebf-a8a2-532970593be1": {
+      "width": 150,
+      "height": 50
+    },
+    "9f2bc044-ab4a-440a-b196-029898013e8f": {
+      "width": 160,
+      "height": 56
+    },
+    "66e3f678-a770-4f9e-98d6-211467523ccd": {
+      "width": 150,
+      "height": 46
+    },
+    "837fa8c9-7c46-49c4-8b3b-e1d019f72653": {
+      "width": 160,
+      "height": 56
+    },
+    "824a0f4d-868b-4eb1-bd14-f5be1b962fbc": {
+      "width": 150,
+      "height": 50
+    },
+    "9d03e099-76f4-4a79-8b5f-1788e6b2764f": {
+      "width": 150,
+      "height": 46
+    },
+    "8f0b42af-e67f-48df-97f9-a86681274234": {
+      "width": 150,
+      "height": 46
+    },
+    "415f584b-4eea-4fa2-8718-b8edaedb516c": {
+      "width": 150,
+      "height": 70
+    },
+    "8e69e47e-4185-4c22-9f1a-86aefc07b2a5": {
+      "width": 150,
+      "height": 50
+    },
+    "ce40532f-cd8a-4be7-a195-29020b2c5c1a": {
+      "width": 150,
+      "height": 46
+    },
+    "50106c12-d4d8-4782-a559-31c6452427a9": {
+      "collapsed": true
+    },
+    "3081f075-4489-4c76-b796-95a6c703e46a": {
+      "collapsed": true
+    },
+    "29366ed1-ed34-4fa5-a64d-d0f4da875f22": {
+      "collapsed": true
+    },
+    "bed51e58-5b0c-4d56-88c2-58fd7aefe531": {
+      "collapsed": true
+    },
+    "88a8f4f0-ae29-4c27-b9cd-a7e6faa4f33c": {
+      "collapsed": true
+    }
+  },
+  "tool": "pistar.2.1.0",
+  "istar": "2.0",
+  "saveDate": "Thu, 19 Nov 2026 20:22:44 GMT",
+  "diagram": {
+    "width": 1900,
+    "height": 1250,
+    "name": "BRFN iStar SD - multi-vendor ordering, fulfilment and weekly settlement",
+    "customProperties": {
+      "Description": "Strategic Dependency model (iStar 2.0 / piStar). Scope: customer multi-vendor ordering and checkout; producer fulfilment and weekly settlement."
+    }
+  }
+}

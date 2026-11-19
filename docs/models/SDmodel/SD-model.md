@@ -1,5 +1,21 @@
 # i* Strategic Dependency Model
 
+## How the diagram works
+
+There are 5 different symbols in the diagrams.
+- Circle: is an Actor. It could be a person, system, role, but importantly it has it's own goals and relies on others.
+- Round edge rectangle: is a Hard Goal. It is the outcome.
+- Hexagon: is a Task. It specifies a activity.
+- Rectangle: is a Resource. It could provide information or a thing.
+- Wavy: is a Soft Goal. It is a desired quality of outcome.
+
+And different connecting lines.
+- Has a 'D': Represents a dependency. The round side points to the actor being relied on. Depender, Dependum, Dependee.
+- Has a '|': Represents AND. Every child part must be fulfilled for the Task to happen.
+- Has a filled arrow: Represents OR. The goal has multiple paths to be achieved.
+- Has a hollow arrow with make/help/hurt: Represents a very positive, positive or negative effect on the soft goal/ quality.
+- Has a dot: Represents a task needing a resource.
+
 ## Purpose
 
 The Strategic Dependency model shows how the main people and systems involved in the Bristol Regional Food Network (BRFN) marketplace depend on one another. Each dependency has a few factors:
@@ -54,4 +70,4 @@ Producers rely on the marketplace to provide accurate order details and notifica
 
 The following diagram shows the main actors involved with the BFRN marketplace and the dependencies between them.
 
-![Strategic Dependency Model](SD-model.png)
+![Strategic Dependency Model](SDdiagram.png)
