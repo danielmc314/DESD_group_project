@@ -25,9 +25,9 @@ the following tasks where not finished during sprint 2 and need to be completed 
 |---|---|---|---|---|
 | finalise Multi vendor Ordering Operational BPMN| Daniel mcnamara | 29/11 | in progress | |
 | complete vendor specific messaging| | 01/12 | in progress| |
-| implement and test second functionality in camunda | | | Not started | |
+| implement and test second functionality in camunda | Wayne Tong | | In progress | |
 | verify camunda forms and user interactions | | | Not Started | |
-| test alternate paths and exception handling| | | Not started | |
+| test alternate paths and exception handling| Wayne Tong | | In progress | |
 | Verify all models, Forms and code are committed to github | Daniel Mcnamara | | Not Started | | 
 | Test both functionalitys end to end | all members | | Not started | |
 | Complete README and other documentation| | | Not Started | |
